@@ -1,0 +1,60 @@
+.main {
+    @include max-md{
+        background-position: bottom right;
+        background-image: url(../images/main_bg_mobile.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        @include max-sm{
+            background-size: contain;
+        }
+        
+    }
+    
+    &__content {
+        padding: 80px 0 75px;
+        background-image: url(../images/main_bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        @include max-xxl{
+            padding: 50px 0 0;
+        }
+        @include max-md{
+            padding: 38px 0 50px;
+            background-image: none;
+        }
+        @include max-sm{
+            padding: 38px 0 200px;
+        }
+        
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+        max-width: 644px;
+        @include max-xxl{
+            row-gap: 40px;
+            max-width: 440px;
+        }
+        @include max-lg{
+            max-width: 325px;
+            row-gap: 30px;
+        }
+        @include max-md{
+            // max-width: 100%;
+        }
+        @include max-sm{
+            max-width: 100%;
+        }
+        
+        
+    }
+    &h1 {
+    }
+    &h4 {
+    }
+    &button {
+    }
+}

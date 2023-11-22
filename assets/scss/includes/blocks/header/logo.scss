@@ -1,0 +1,14 @@
+.logo {
+
+    &:hover svg path {
+        fill: #427A5B;
+    }
+    & svg {
+        @include max-lg {
+            width: 100px;
+            height: 30px;
+        }
+    }
+    
+    
+}

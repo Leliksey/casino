@@ -1,0 +1,61 @@
+.burger {
+    cursor: pointer;
+    &:hover svg path {
+        stroke: #427a5b;
+    }
+    &__icon {
+        &_close {
+            display: none;
+        }
+    }
+    &__block {
+        display: none;
+        display: block;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        height: 100%;
+        transition: .5s;
+        &.open {
+            right: 0;
+            transition: .5s;
+        }
+    }
+    &__search {
+        border: 1px solid #2c543c;
+        border-radius: 10px;
+        position: relative;
+        & svg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 13px;
+            margin: auto;
+            background-color: #fff;
+        }
+    }
+    &__search input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: flex-start;
+        row-gap: 37px;
+        & .menu__link {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #0c171c;
+        }
+        
+    }
+}

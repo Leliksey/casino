@@ -1,0 +1,17 @@
+.search {
+    cursor: pointer;
+    @include max-md{
+        display: none;
+    }
+    
+    &:hover svg path {
+        fill: #427A5B;
+    }
+    & svg {
+        @include max-lg{
+            width: 22px;
+            height: 22px;
+        }
+        
+    }
+}

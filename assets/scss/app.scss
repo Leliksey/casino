@@ -7,12 +7,16 @@
 
 //header
 @import './includes/blocks/header/header.scss';
+@import './includes/blocks/header/menu.scss';
+@import './includes/blocks/header/logo.scss';
+@import './includes/blocks/header/search.scss';
+@import './includes/blocks/header/burger.scss';
 
-// //main
-// @import './includes/blocks/main/main.scss';
+//main
+@import './includes/blocks/main/main.scss';
 
-// //service
-// @import './includes/blocks/service/service.scss';
+//blockTemplate
+@import './includes/blocks/blockTemplate/blockTemplate.scss';
 
 // //popular
 // @import './includes/blocks/popular/popular.scss';

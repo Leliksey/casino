@@ -1,0 +1,27 @@
+.header {
+    padding: 20px 0;
+    background-color: #fff;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        & svg {
+            @include max-lg {
+                width: 125px;
+                height: 40px;
+            }
+        }
+    }
+    &__menu {
+    }
+    &__search {
+    }
+    &__burger {
+        display: none;
+        @include max-md {
+            display: block;
+        }
+    }
+}

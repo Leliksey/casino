@@ -102,7 +102,61 @@ section {
 	display: block;
 }
 body {
-	font-family: "Raleway", sans-serif;
+	font-family: "Cabin", sans-serif;
+	background-color: #f5f5f6;
+}
+h1 {
+	font-family: "Kanit", sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 62px;
+	color: #1a2024;
+	@include max-xxl {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	@include max-lg {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	@include max-md {
+		font-size: 30px;
+		line-height: 39px;
+	}
+}
+h2 {
+}
+h3 {
+}
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29px;
+	@include max-xxl {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	@include max-md {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+h5 {
+	font-size: 20px;
+	font-family: "Kanit", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 1px;
+	@include max-xxl {
+		font-size: 16px;
+		line-height: 16px;
+	}
+	@include max-md {
+		// font-size: 16px;
+	}
+}
+h6 {
 }
 ol,
 ul {
@@ -131,7 +185,7 @@ a {
 	text-transform: initial;
 	color: unset;
 	&:focus {
-		color: #C17465;
+		color: #c17465;
 	}
 }
 button {
@@ -161,14 +215,18 @@ button {
 	transform: rotateZ(180deg);
 }
 .container {
-	max-width: 1440px;
+	max-width: 1920px;
 	margin: auto;
-	padding: 0 133px 0 135px;
-	@include max-xl {
+	padding: 0 100px;
+	@include max-xxl {
+		padding: 0 135px;
+	}
+	@include max-xlmidle {
 		padding: 0 35px;
 	}
-	@include max-md {
-		padding: 0 15px;
+
+	@include max-lg {
+		padding: 0 20px;
 	}
 }
 .owl-stage-outer {
@@ -209,10 +267,11 @@ button {
 	background: rgba(255, 255, 255, 0);
 }
 .sectionTitle {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	color: #555555;
+	font-family: "Kanit", sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 60px;
+	color: #2c2d2e;
 	@include max-md {
 		font-size: 24px;
 		line-height: 28px;
@@ -232,4 +291,52 @@ select {
 }
 select::-ms-expand {
 	display: none;
+}
+.button1 {
+	background-color: #60ab81;
+	padding: 17px;
+	width: 100%;
+	max-width: 230px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Kanit", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 1px;
+	@include max-xxl {
+		padding: 12px;
+		max-width: 192px;
+		font-size: 16px;
+		line-height: 16px;
+	}
+	@include max-md {
+		padding: 15px;
+		line-height: 11px;
+		max-width: 100%;
+	}
+	&:hover {
+		background-color: #427A5B;
+	}
+}
+.button2 {
+	background-color: #60ab81;
+	padding: 17px;
+	width: 100%;
+	max-width: 244px;
+	color: #fff;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	&::after {
+		content: "";
+		background-image: url("data:image/svg+xml,%3Csvg width='23' height='12' viewBox='0 0 23 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.8242 5.57932L18.2283 0.988217C18.1731 0.932888 18.1075 0.88901 18.0353 0.859106C17.9631 0.829202 17.8857 0.813861 17.8076 0.813965C17.479 0.813965 17.2126 1.08031 17.2126 1.40891C17.2126 1.57319 17.2792 1.72193 17.3869 1.8296L20.9664 5.40911H0.59818C0.267824 5.40911 0 5.67694 0 6.00734C0 6.33774 0.267824 6.60556 0.59818 6.60556H20.9664L17.3869 10.1753C17.2797 10.2864 17.2199 10.4348 17.2201 10.5891C17.2201 10.9187 17.4873 11.1858 17.8169 11.1858C17.9788 11.1858 18.1257 11.1213 18.2332 11.0166L18.2331 11.0167L22.8291 6.42075C22.9388 6.30923 23.0002 6.15898 23 6.00253C23 5.83722 22.9328 5.68754 22.8242 5.57941V5.57932Z' fill='%23F5F5F6'/%3E%3C/svg%3E%0A");
+		width: 23px;
+		height: 12px;
+	}
+	&:hover {
+		background-color: #427A5B;
+	}
 }
