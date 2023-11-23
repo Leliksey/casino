@@ -157,6 +157,11 @@ h5 {
 	}
 }
 h6 {
+	font-size: 18px;
+	@include max-xxl {
+		font-size: 14px;
+		line-height: 14px;
+	}
 }
 ol,
 ul {
@@ -272,6 +277,11 @@ button {
 	font-weight: 600;
 	line-height: 60px;
 	color: #2c2d2e;
+	@include max-xxl {
+		font-size: 32px;
+		line-height: 48px;
+	}
+
 	@include max-md {
 		font-size: 24px;
 		line-height: 28px;
@@ -316,7 +326,7 @@ select::-ms-expand {
 		max-width: 100%;
 	}
 	&:hover {
-		background-color: #427A5B;
+		background-color: #427a5b;
 	}
 }
 .button2 {
@@ -330,6 +340,18 @@ select::-ms-expand {
 	align-items: center;
 	justify-content: center;
 	column-gap: 10px;
+	font-family: "Kanit", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	@include max-xxl {
+		font-size: 16px;
+		line-height: 19px;
+		padding: 5px 10px;
+		max-width: 175px;
+	}
 	&::after {
 		content: "";
 		background-image: url("data:image/svg+xml,%3Csvg width='23' height='12' viewBox='0 0 23 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.8242 5.57932L18.2283 0.988217C18.1731 0.932888 18.1075 0.88901 18.0353 0.859106C17.9631 0.829202 17.8857 0.813861 17.8076 0.813965C17.479 0.813965 17.2126 1.08031 17.2126 1.40891C17.2126 1.57319 17.2792 1.72193 17.3869 1.8296L20.9664 5.40911H0.59818C0.267824 5.40911 0 5.67694 0 6.00734C0 6.33774 0.267824 6.60556 0.59818 6.60556H20.9664L17.3869 10.1753C17.2797 10.2864 17.2199 10.4348 17.2201 10.5891C17.2201 10.9187 17.4873 11.1858 17.8169 11.1858C17.9788 11.1858 18.1257 11.1213 18.2332 11.0166L18.2331 11.0167L22.8291 6.42075C22.9388 6.30923 23.0002 6.15898 23 6.00253C23 5.83722 22.9328 5.68754 22.8242 5.57941V5.57932Z' fill='%23F5F5F6'/%3E%3C/svg%3E%0A");
@@ -337,6 +359,48 @@ select::-ms-expand {
 		height: 12px;
 	}
 	&:hover {
-		background-color: #427A5B;
+		background-color: #427a5b;
 	}
+}
+.rating {
+	font-size: 32px;
+	display: flex;
+	cursor: pointer;
+	@include max-xxl{
+		font-size: 25px;
+	}
+	@include max-md{
+		font-size: 20px;
+	}
+	
+	&__result {
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 29px;
+		color: #000;
+		@include max-xxxl{
+			font-size: 20px;
+			margin-bottom: -5px;
+		}
+		
+		@include max-xxl{
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: -3px;
+			font-weight: 700;
+		}
+		@include max-md{
+			margin-bottom: -5px;
+		}
+		
+	}
+}
+
+.star {
+	color: gray;
+	cursor: pointer;
+}
+
+.star.active {
+	color: #f3c436;
 }

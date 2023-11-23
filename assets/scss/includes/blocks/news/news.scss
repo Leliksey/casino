@@ -1,0 +1,122 @@
+.news {
+      gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include max-xl{
+        gap: 15px;
+      }
+      @include max-lg{
+        gap: 10px;
+      }
+      @include max-md{
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+    &__item {
+        position: relative;
+        height: max-content;
+        width: 49%;
+        @include max-md{
+            width: 100%;
+        }
+        
+        &_bg {
+        }
+        &:nth-child(n + 3) {
+            width: 32%;
+            @include max-md{
+                width: 100%;
+            }
+            
+        }
+        &:nth-child(n + 3) .pseudo {
+            display: none;
+        }
+        &:nth-child(n + 3) .news__info {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            margin-top: 20px;
+            @include max-lg{
+                margin-top: 10px;
+            }
+            
+            & .news__title {
+                color: #2C2D2E;
+                position: relative;
+                bottom: 0;
+                top: 0;
+            }
+            & .news__date {
+                color: #2C2D2E;
+                margin-top: 20px;
+                @include max-lg{
+                    margin-top: 10px;
+                }
+                @include max-md{
+                    color: #919399;
+                }
+                
+            }
+        }
+    }
+    
+    & .pseudo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include max-md{
+            display: none;
+        }
+        
+    }
+    &__info {
+        position: absolute;
+        bottom: 30px;
+        left: 25px;
+        width: 100%;
+        max-width: 420px;
+        @include max-xl{
+            max-width: 400px;
+        }
+        @include max-lg{
+            max-width: 300px;
+        }
+        @include max-lg{
+            bottom: 20px;
+        }
+        @include max-md{
+            position: relative;
+            bottom: 0;
+            max-width: 100%;
+            margin-top: 10px;
+            left: 0;
+        }
+        
+    }
+    &__title {
+        color: #fff;
+        position: absolute;
+        top: -30px;
+        @include max-md{
+            position: relative;
+            color: #2C2D2E;
+            top: 0;
+        }
+        
+    }
+    &__date {
+        color: #fff;
+        margin-top: 25px;
+        @include max-xxl{
+            margin-top: 22px;
+        }
+        @include max-md{
+            color: #919399;
+            margin-top: 10px;
+        }
+        
+    }
+}

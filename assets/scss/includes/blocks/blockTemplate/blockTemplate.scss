@@ -1,0 +1,45 @@
+.blockTemplate {
+    margin-top: 96px;
+    
+    @include max-xxl{
+        margin-top: 75px;
+    }
+    @include max-md{
+        padding-bottom: 65px;
+        position: relative;
+    }
+    
+    &__content {
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        @include max-xxl{
+            margin-bottom: 40px;
+          }
+          @include max-md{
+            margin-bottom: 24px;
+          }
+    }
+    & .sectionTitle {
+    }
+    & .button2 {
+        @include max-md{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 90%;
+            line-height: 11px;
+            padding: 15px;
+        }
+        &::after {
+            @include max-md{
+                display: none;
+            }
+        }
+    }
+}
