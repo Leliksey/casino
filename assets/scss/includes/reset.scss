@@ -104,6 +104,7 @@ section {
 body {
 	font-family: "Cabin", sans-serif;
 	background-color: #f5f5f6;
+	cursor: default;
 }
 h1 {
 	font-family: "Kanit", sans-serif;
@@ -125,6 +126,19 @@ h1 {
 	}
 }
 h2 {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 44px;
+	color: #2C2D2E;
+	@include max-xxl{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	@include max-md{
+		line-height: 20px;
+		letter-spacing: 2px;
+	}
+	
 }
 h3 {
 }
@@ -189,6 +203,7 @@ a {
 	text-decoration: none;
 	text-transform: initial;
 	color: unset;
+	cursor: pointer;
 	&:focus {
 		color: #c17465;
 	}
@@ -197,12 +212,16 @@ button {
 	border: none;
 	padding: 0;
 	background: none;
+	cursor: pointer;
 }
 .form-control {
 	padding: 0;
 }
 .hide {
 	display: none !important;
+}
+.ovh {
+	overflow: hidden;
 }
 .d__block {
 	display: block !important;
@@ -366,33 +385,32 @@ select::-ms-expand {
 	font-size: 32px;
 	display: flex;
 	cursor: pointer;
-	@include max-xxl{
+	@include max-xxl {
 		font-size: 25px;
 	}
-	@include max-md{
+	@include max-md {
 		font-size: 20px;
 	}
-	
+
 	&__result {
 		font-size: 24px;
 		font-weight: 600;
 		line-height: 29px;
 		color: #000;
-		@include max-xxxl{
+		@include max-xxxl {
 			font-size: 20px;
 			margin-bottom: -5px;
 		}
-		
-		@include max-xxl{
+
+		@include max-xxl {
 			font-size: 14px;
 			line-height: 18px;
 			margin-bottom: -3px;
 			font-weight: 700;
 		}
-		@include max-md{
+		@include max-md {
 			margin-bottom: -5px;
 		}
-		
 	}
 }
 

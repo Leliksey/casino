@@ -1,0 +1,58 @@
+.categoryWall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    @include max-xl{
+        gap: 15px;
+    }
+    @include max-sm {
+        gap: 20px;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 28px;
+        width: 32%;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 40px 30px;
+        text-align: center;
+        @include max-xxl{
+            row-gap: 15px;
+            padding: 27px 0 24px;
+        }
+        @include max-lg{
+            width: 31%;
+        }
+        @include max-md{
+            width: 48%;
+            padding: 27px 0 30px;
+        }
+        @include max-sm{
+            width: 100%;
+        }
+        
+        &:hover {
+            box-shadow: -4px 3px 20px 0px #427A5B;
+        }
+        & img {
+            width: 100px;
+            height: 100px;
+            @include max-xxl{
+                width: 72px;
+                height: 72px;
+            }
+            @include max-md{
+                width: 74px;
+                height: 74px;
+            }
+            
+        }
+        & h2 {
+        }
+    }
+}

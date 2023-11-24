@@ -9,6 +9,7 @@ $xl: 1200px;
 $xlmidle: 1300px;
 $xxl: 1440px;
 $xxxl: 1570px;
+$large: 1650px;
 
 
 @mixin landscape {
@@ -85,6 +86,11 @@ $xxxl: 1570px;
     @content;
   }
 }
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
 
 @mixin max-ip {
   @media (max-width: #{$ip}) {
@@ -144,6 +150,11 @@ $xxxl: 1570px;
 }
 @mixin max-xxxl {
   @media (max-width: #{$xxxl}) {
+    @content;
+  }
+}
+@mixin max-large {
+  @media (max-width: #{$large}) {
     @content;
   }
 }

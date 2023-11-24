@@ -1,0 +1,202 @@
+.footer {
+    background-color: #2c543c;
+    padding: 40px 0;
+    margin-top: 96px;
+    @include max-large {
+        padding: 45px 0;
+    }
+    @include max-xl{
+        padding: 35px 0;
+        margin-top: 70px;
+    }
+    @include max-lg{
+        padding: 25px 0;
+        margin-top: 50px;
+    }
+    @include max-md{
+        padding: 22px 0;
+        margin-top: 30px;
+    }
+    
+    &__content {
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include max-sm{
+            display: grid;
+            grid-template-columns: repeat(1fr 1fr);
+        }
+        
+    }
+    &__logo svg {
+        @include max-large{
+            width: 185px;
+            height: 33px;
+        }
+        @include max-xl{
+            width: 140px;
+            height: 42px;
+        }
+        @include max-lg{
+            width: 100px;
+            height: 16px;
+        }
+        @include max-sm{
+            width: 185px;
+            height: 32px;
+        }
+        
+    }
+    &__menu {
+        display: flex;
+        column-gap: 97px;
+        @include max-large{
+            column-gap: 77px;
+        }
+        @include max-xl{
+            column-gap: 57px;
+        }
+        @include max-lg{
+            column-gap: 27px;
+        }
+        @include max-md{
+            margin-left: 10px;
+            column-gap: 10px;
+        }
+        @include max-sm{
+            margin-left: 0;
+            flex-direction: column;
+            margin-top: 35px;
+            justify-self: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            row-gap: 40px;
+        }
+        
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            @include max-xl{
+                row-gap: 15px;
+            }
+            @include max-lg{
+                row-gap: 10px;
+            }
+            @include max-sm{
+                text-align: center;
+            }
+            
+        }
+        &-item:first-child .footer__menu-link {
+            font-weight: 600;
+            @include max-large{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            @include max-lg{
+                font-size: 14px;
+            }
+            @include max-md{
+                min-width: max-content;
+                display: block;
+            }
+            @include max-sm{
+                font-size: 20px;
+                line-height: 14px;
+            }
+            
+        }
+        &-link {
+            color: #f5f5f6;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            @include max-large{
+                font-size: 14px;
+                line-height: 14px;
+            }
+            @include max-lg{
+                font-size: 12px;
+            }
+            @include max-sm{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+        }
+    }
+    &__social {
+        @include max-sm{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        
+        
+    }
+    &__bottom {
+        margin-top: 60px;
+        border-top: 1px solid #fff;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+        @include max-large{
+            row-gap: 0;
+        }
+        @include max-xl{
+            margin-top: 40px;
+            padding-top: 40px;
+        }
+        @include max-lg{
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+        @include max-sm{
+            margin-top: 24px;
+            padding-top: 24px;
+        }
+        
+        &-text {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+            @include max-large{
+                font-size: 14px;
+                line-height: 14px;
+            }
+            @include max-lg{
+                font-size: 12px;
+            }
+            @include max-sm{
+                font-size: 14px;
+            }
+            
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            @include max-large{
+                margin: 40px 0 30px;
+            }
+            @include max-lg{
+                margin: 25px 0;
+            }
+            &__item {
+                display: flex;
+                justify-content: center;
+            }
+            &__item img {
+                width: 70%;
+            }
+        }
+        
+    }
+}

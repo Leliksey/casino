@@ -77,7 +77,10 @@
         bottom: 30px;
         left: 25px;
         width: 100%;
-        max-width: 420px;
+        @include max-xxl{
+            max-width: 420px;
+        }
+        
         @include max-xl{
             max-width: 400px;
         }
@@ -100,6 +103,10 @@
         color: #fff;
         position: absolute;
         top: -30px;
+        @include max-xxl{
+            top: -40px;
+        }
+        
         @include max-md{
             position: relative;
             color: #2C2D2E;

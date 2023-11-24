@@ -19,6 +19,7 @@
         padding: 20px;
         height: 100%;
         transition: .5s;
+        z-index: 5;
         &.open {
             right: 0;
             transition: .5s;
