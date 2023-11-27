@@ -1,0 +1,51 @@
+.blog {
+    &__img {
+        margin-top: 48px;
+        @include max-xxl{
+            margin-top: 20px;
+        }
+        
+        @include max-md{
+            margin-top: 24px;
+        }
+        
+        & img {
+            border-radius: 4px;
+        }
+    }
+    &__desc {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @include max-md{
+            margin-top: 24px;
+            row-gap: 20px;
+        }
+        
+        & p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            color: #000;
+            @include max-xxl{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            @include max-md{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+        }
+        &-list {
+            list-style: initial;
+            margin-left: 35px;
+            @include max-md{
+                margin-left: 30px;
+            }
+        }
+    }
+    
+}

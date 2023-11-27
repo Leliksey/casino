@@ -1,0 +1,45 @@
+.pageTemplate {
+    padding-bottom: 48px;
+
+    @include max-xxl {
+        padding-bottom: 40px;
+    }
+    @include max-md {
+        padding-bottom: 24px;
+    }
+    & .blockTemplate {
+        @include max-md{
+            padding-bottom: 24px;
+        }
+    }
+    & .news {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    & .news__item {
+        width: 100%;
+    }
+    & .news__info {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: 20px;
+    }
+    & .news__title {
+        color: #2c2d2e;
+        position: relative;
+        top: 0;
+        & h4 {
+            font-weight: 600;
+        }
+    }
+    & .news__date {
+        color: #2c2d2e;
+        & h6 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #919399;
+        }
+    }
+}

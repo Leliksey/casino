@@ -112,7 +112,9 @@
             color: #2C2D2E;
             top: 0;
         }
-        
+        &:hover h4 {
+            color: #427A5B;
+        }
     }
     &__date {
         color: #fff;
